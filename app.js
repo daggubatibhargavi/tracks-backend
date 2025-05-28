@@ -15,9 +15,10 @@ app.use(express.json());
 
 
 const allowedOrigins = [
-    'https://tracks-frontend.vercel.app/',
+    'https://tracks-frontend.vercel.app',
     'http://localhost:3000'
 ];
+
 
 app.use(cors({
     origin: function (origin, callback) {
